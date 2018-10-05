@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+
+target 'UIPlayground' do
+  use_frameworks!
+
+  pod 'AMPopTip', :git => 'https://github.com/drmobile/AMPopTip.git', :branch => 'soocii'
+  pod 'Texture'
+  pod 'Hero',                     '~> 1.2.0'
+  pod 'SwifterSwift',             '~> 4.4.0'
+end
