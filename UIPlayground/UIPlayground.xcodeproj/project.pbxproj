@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		21A8495FB10C80CDF06A8D1A /* Pods_UIPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364474D9CD5E04DC0DC9F47B /* Pods_UIPlayground.framework */; };
+		491114F42168FBE100AA1B3B /* AnimatedGetRewardDialogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491114F32168FBE100AA1B3B /* AnimatedGetRewardDialogNode.swift */; };
+		49111514216B819E00AA1B3B /* RiceLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49111513216B819E00AA1B3B /* RiceLabelNode.swift */; };
+		49111516216B9B1200AA1B3B /* JptLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49111515216B9B1200AA1B3B /* JptLabelNode.swift */; };
+		4996DCBB2167450C002C9D9F /* GetRewardDialogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996DCBA2167450C002C9D9F /* GetRewardDialogNode.swift */; };
 		49A3CF66216725AC0095AD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3CF65216725AC0095AD81 /* AppDelegate.swift */; };
 		49A3CF68216725AC0095AD81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3CF67216725AC0095AD81 /* ViewController.swift */; };
 		49A3CF6D216725AF0095AD81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A3CF6C216725AF0095AD81 /* Assets.xcassets */; };
@@ -20,6 +24,10 @@
 
 /* Begin PBXFileReference section */
 		364474D9CD5E04DC0DC9F47B /* Pods_UIPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		491114F32168FBE100AA1B3B /* AnimatedGetRewardDialogNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGetRewardDialogNode.swift; sourceTree = "<group>"; };
+		49111513216B819E00AA1B3B /* RiceLabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiceLabelNode.swift; sourceTree = "<group>"; };
+		49111515216B9B1200AA1B3B /* JptLabelNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JptLabelNode.swift; sourceTree = "<group>"; };
+		4996DCBA2167450C002C9D9F /* GetRewardDialogNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRewardDialogNode.swift; sourceTree = "<group>"; };
 		49A3CF62216725AC0095AD81 /* UIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A3CF65216725AC0095AD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A3CF67216725AC0095AD81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +54,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49111512216B816A00AA1B3B /* NumberLabel */ = {
+			isa = PBXGroup;
+			children = (
+				49111513216B819E00AA1B3B /* RiceLabelNode.swift */,
+				49111515216B9B1200AA1B3B /* JptLabelNode.swift */,
+			);
+			path = NumberLabel;
+			sourceTree = "<group>";
+		};
+		4996DCB92167357C002C9D9F /* GetRewardDialog */ = {
+			isa = PBXGroup;
+			children = (
+				4996DCBA2167450C002C9D9F /* GetRewardDialogNode.swift */,
+				491114F32168FBE100AA1B3B /* AnimatedGetRewardDialogNode.swift */,
+			);
+			path = GetRewardDialog;
+			sourceTree = "<group>";
+		};
 		49A3CF59216725AC0095AD81 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +93,8 @@
 		49A3CF64216725AC0095AD81 /* UIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				49111512216B816A00AA1B3B /* NumberLabel */,
+				4996DCB92167357C002C9D9F /* GetRewardDialog */,
 				49A3CF8121672AC20095AD81 /* Util */,
 				49A3CF7C216729CC0095AD81 /* Extension */,
 				49A3CF77216728A10095AD81 /* ConsecutiveLogin */,
@@ -248,6 +276,10 @@
 				49A3CF79216728C10095AD81 /* ConsecutiveLoginDialogNode.swift in Sources */,
 				49A3CF7B216728D60095AD81 /* GiftIconNode.swift in Sources */,
 				49A3CF7E216729F00095AD81 /* UIColor+HexString.swift in Sources */,
+				49111514216B819E00AA1B3B /* RiceLabelNode.swift in Sources */,
+				491114F42168FBE100AA1B3B /* AnimatedGetRewardDialogNode.swift in Sources */,
+				4996DCBB2167450C002C9D9F /* GetRewardDialogNode.swift in Sources */,
+				49111516216B9B1200AA1B3B /* JptLabelNode.swift in Sources */,
 				49A3CF66216725AC0095AD81 /* AppDelegate.swift in Sources */,
 				49A3CF8021672AB10095AD81 /* SCUtils.swift in Sources */,
 			);

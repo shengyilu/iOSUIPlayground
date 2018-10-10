@@ -10,15 +10,16 @@ import AMPopTip
 
 class ViewController: ASViewController<ASDisplayNode> {
     
-    var customNode:GiftIconNode?
-    let howToPinPostPopTip = PopTip()
-    
+    var customNode: JptLabelNode?
+    var getRewardDialogNode: AnimatedGetRewardDialogNode?
+
     init() {
         super.init(node: ASDisplayNode())
         self.title = "Layout Example"
         
-        self.customNode = GiftIconNode(dayth: 2, isHighlight: false, isCollect: true)
-        
+        //self.customNode = GiftIconNode(dayth: 2, isHighlight: false, isCollect: true)
+        //self.customNode = RiceLabelNode(rice: 250)
+        self.customNode = JptLabelNode(jpt: 0.234)
         self.node.addSubnode(customNode!)
         
         self.node.backgroundColor = UIColor.lightGray
@@ -28,6 +29,8 @@ class ViewController: ASViewController<ASDisplayNode> {
                                       sizingOptions: .minimumXY,
                                       child: customNode)
         }
+
+        //getRewardDialogNode = AnimatedGetRewardDialogNode(dayth:1, rice: 10, jpt: 0)
     }
     
     
@@ -44,10 +47,17 @@ class ViewController: ASViewController<ASDisplayNode> {
         super.viewDidLayoutSubviews()
         
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        print("[Edward] viewWillAppear\(String(animated))")
+        //getRewardDialogNode!.animate()
+    }
     
     func showHowToPinPost() {
-        let consecutiveLoginDialogNode = ConsecutiveLoginDialogNode(alreadyLogInDays: 2)
-        consecutiveLoginDialogNode.showDialog(hostView: self.view, anchor: self.view.frame)
+        //let consecutiveLoginDialogNode = ConsecutiveLoginDialogNode(alreadyLogInDays: 2)
+        //consecutiveLoginDialogNode.showDialog(hostView: self.view, anchor: self.view.frame)
+        let getRewardDialogNode = AnimatedGetRewardDialogNode(dayth:1, rice: 189, jpt: 0.546)
+        getRewardDialogNode.showDialog(hostView: self.view, anchor: self.view.frame)
     }
 }
 
